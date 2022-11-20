@@ -24,16 +24,28 @@ public class Main {
                 System.out.println("Сегодня пятница, " + (i + 1) + "-e число. Необходимо подготовить отчёт.");
             }
         }
-        System.out.println("");
+        System.out.println();
 
-        //Задача №3.
-        int currentYear = 2021; //текущий год
+        /*Задача №3 с рандомным первым появлением
+        int currentYear = 2021; //текущий год - вариант задачи
         int firstObservableAppearance = (int) (currentYear - 200 + Math.random() * 79);
         while (firstObservableAppearance <= currentYear + 100) {
             System.out.println(firstObservableAppearance);
             firstObservableAppearance += 79;
         }
         System.out.println();
+
+         */
+
+        //Задача №3.
+        int currentYear = 2021; //текущий год
+        for (int i = 0; i <= currentYear + 100; i += 79) {
+            if (i >= currentYear - 200) {
+                System.out.println(i);
+            }
+        }
+        System.out.println();
+
 
         //Задача №4.
         String strike;
